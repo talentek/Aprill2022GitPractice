@@ -8,15 +8,9 @@ import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
-
 public class OpggProject {
 
-	
-
 	public static void main(String[] args) throws InterruptedException {
-
-		
 
 		WebDriver driver = new ChromeDriver();
 
@@ -26,26 +20,16 @@ public class OpggProject {
 
 		driver.manage().window().maximize();
 
-		
-
 		WebElement searchSummoner = driver.findElement(By.xpath("//*[@id=\"searchSummoner\"]"));
 
 		WebElement ggButton = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[2]/div[2]/div/form/button"));
-
-		
 
 		searchSummoner.sendKeys("COOKIEMONSTER123");
 
 		ggButton.click();
 
+		driver.quit();
+
 	}
 
-	
-
-
-
 }
-
-
-	
-
